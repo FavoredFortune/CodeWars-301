@@ -21,4 +21,4 @@ Solution A was to assign a variable to the first element in the array (index 0, 
 
 3. Wrote Solution A out and it worked - no errors in tests.
 
-
+**Source for image MD code**: http://www.disturbancesinthewash.net/journal/2012/8/11/how-to-add-an-image-with-link-in-markdown.html
