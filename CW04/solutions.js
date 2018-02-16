@@ -1,15 +1,8 @@
 'use strict';
 
-//Today's codewar challenge was to insert dashes between odd numbers in a string. So far, I've failed.
+//Today's codewar challenge was to validate a username to be sure it had between 4 and 16 characters, using only lowercase letters, numbers and underscores.
 
-function insertDash(num) {
-
-  let numArray = String(num).split('');
-  console.log(numArray);
-  for (var i in numArray){
-    if ((numArray[i]%2 === 1) && (numArray[i-1]%2 === 1)){
-      return numArray.splice([i], 0, '-');
-    }
-  }
-  return numArray;
+function validateUsr(username) {
+  let res =  /^([a-z0-9_]{4,16})$/.test(username);
+  return res;
 }
