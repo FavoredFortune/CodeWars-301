@@ -9,7 +9,7 @@ https://www.codewars.com/kata/regex-validate-pin-code
 **Thought process for solution:**
 
 This time I pseudo coded on my own.
-![Sooz Pseudo Code Whiteboard](../CodeWars_Pin_Sooz.jpg)
+![Sooz Pseudo Code Whiteboard](CodeWars_Pin_Sooz.jpg.png)
 
 I believe the best approach is to rules to do the following:
 * make sure the string was between 4 and 6 characters
@@ -21,9 +21,9 @@ I believe the best approach is to rules to do the following:
 
 2. Made README
 
-3. Tested my solution in Kata worked right away...building tests tho...
+3. Tested my solution in Kata and can only get it work for digit quantity match (4 or 6). 
 
-4. Paired with Beverly via Slack. We looked at each other's code and asked each other questions and gave hints. The thing I was originally missing? A / and the start and end of my command.
+4. In interest of time (spent an hour and 15 minutes on it), calling it done for now at partial solution - pass 10, fail 9.
 
 **Source for image MD code**: http://www.disturbancesinthewash.net/journal/2012/8/11/how-to-add-an-image-with-link-in-markdown.html
 
