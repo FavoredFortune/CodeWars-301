@@ -1,13 +1,25 @@
 'use strict';
 
-//This codewar challenge was to validate a PIN to be sure it had either 4 or 6 digits and contained only numbers.
+//This codewar challenge was to validate if an array's elements all have a value that is + or - 1 of another element and if that is true for each of the elements return true otherwise return false (including for an empty array)
 
-function validatePIN (pin) {
 
-  //the \d is meant to match only digits, so if a string has something other than digits it returns false
-  // {4| 6} is meant to match strings that are only 4 or 6 characters in length
-  //each works for its own part, but the two don't work together  WEIRD
+function isNice(arr) {
+  //this returns false if the array is empty  - doing this first helps simplify the subsequent logic tests in the for loop after
 
-  let res =  /^([\d{4|6}])$/.test(pin);
-  return  res ? true : false; 
+  if (arr.length === 0){
+    return false;
+  }
+
+  // this tests for the rest of the requirements to see a "Nice" array - that any element in the array equals the value of that element plus or minus one
+  else{
+    for(var i in arr){
+      if((arr.includes((arr[i]+1)))||(arr.includes(arr[i]-1))){
+        continue;
+      } else {
+        return false;
+      }
+      
+    //once the for loop is completed, if not stopped by a false value in the if test within the for loop, the array is "Nice" and the function can return true
+    }return true;
+  }
 }
