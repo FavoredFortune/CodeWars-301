@@ -1,31 +1,45 @@
 # CodeWars-301
-*Pin Code Validation with Regex - Kata 4 Day 4*
+*Find the "Nice" array- Kata 9 Day 6*
 
-**Link to Kata:** 
-https://www.codewars.com/kata/regex-validate-pin-code
+**Link to Kata:** https://www.codewars.com/kata/fixme-replace-all-dots
 
-**Problem Domain:** This code is meant to validate a PIN that is between 4 to 6 digits only that returns a TRUE if it the content meets those parameters and FALSE if not. 
+**Problem Domain:** Identify a "Nice Array" with true and something not nice as false. The "Nice Array" is defined and any element(n) in the array having another element that is n-1 OR n+1. Anything else in an array is not nice and needs to return false, including an empty array.
 
 **Thought process for solution:**
 
-This time I pseudo coded on my own.
-![Sooz Pseudo Code Whiteboard](CodeWars_Pin_Sooz.jpg.png)
+Tonight I pseudo coded on with Jose R. 
+![Jose R and Sooz Pseudo Code Whiteboard](PseudoCode_Jose_Sooz.jpg)
 
-I believe the best approach is to rules to do the following:
-* make sure the string was between 4 and 6 characters
-* make sure that the string containes only digits
-* make sure that only false and true messages are returned based on the validigyt of the PIN (re length and digits-only use)
+
+1. Test if the 0 index in the array meets the conditions =n+1 or =n-1 for any other element in the array.
+
+2. Repeat test for each element in the array.
+
+3. If all indicies meet the conditions in #1 return true, otherwise false.
 
 **Solution work:**
-1. Made solutions.js
+1. Made README
 
-2. Made README
+2. Made solutions.js
 
-3. Tested my solution in Kata and can only get it work for digit quantity match (4 or 6). 
+3. Review psuedo code and array methods.
 
-4. In interest of time (spent an hour and 15 minutes on it), calling it done for now at partial solution - pass 10, fail 9.
+4. Tried several array prototype methods like .every and .each but, after chatting with both Beverly and Haron, tried .includes (way easier)
+
+5. Tested and only partially passed - didn't correctly configure to test for empty array
+
+6. Reset my test for the array as part of my conditional for true as a "not equal" to empty array along with array index includes +1 and -1 Partially passed
+
+7. After talking with Haron, also tried using a global "returnArray" to store and return either true or false. It too partially passed, but I also didn't like having to create a new array to return the value.
+
+8. Then I remembered there was a way to continue a loop (return ends it), but could remember the command then I found "continue" (I don't remember it from 201, but I'm sure we covered it) on W3 schools and AHA!
+
+9. Code passed sample test fully (that was true for two prior solutions) and then passed full attempt.
+
+10. Checked files and submitted. 
+
 
 **Source for image MD code**: http://www.disturbancesinthewash.net/journal/2012/8/11/how-to-add-an-image-with-link-in-markdown.html
 
-**Source for RegEx help**:
-https://regex101.com/
+**Source for for loop help**:
+https://www.w3schools.com/jsref/jsref_continue.asp
