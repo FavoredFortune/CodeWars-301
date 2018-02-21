@@ -1,13 +1,9 @@
 'use strict';
 
-//This codewar challenge was to validate a PIN to be sure it had either 4 or 6 digits and contained only numbers.
+//This codewar challenge was to remove all vowels (but not y) from a string.
 
-function validatePIN (pin) {
-
-  //the \d is meant to match only digits, so if a string has something other than digits it returns false
-  // {4| 6} is meant to match strings that are only 4 or 6 characters in length
-  //each works for its own part, but the two don't work together  WEIRD
-
-  let res =  /^([\d{4|6}])$/.test(pin);
-  return  res ? true : false; 
+function disemvowel(str) {
+  //use the regex .replace method to identify (first parameter) all vowels and replace them with a null value (second parameter)
+  return str.replace(/[aeiou]/gi, '');
 }
+
