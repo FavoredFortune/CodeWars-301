@@ -8,6 +8,6 @@ function validatePIN (pin) {
   // {4| 6} is meant to match strings that are only 4 or 6 characters in length
   //each works for its own part, but the two don't work together  WEIRD
 
-  let res =  /^([\d{4|6}])$/.test(pin);
+  let res =  /^([\d]{4}|[\d]{6}])$/g.test(pin);
   return  res ? true : false; 
 }
