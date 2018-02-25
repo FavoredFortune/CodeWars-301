@@ -20,8 +20,20 @@ I've modified it here, based on where I got to with the solution:
 
 2. Made README
 
-3. Tried several methods for turning array into integers and comparing numbers and while not getting errors in REPL, it doesn't pass any tests. 
+3. Decided to take a fresh eye to this and check my method useage. My String method use wasn't correct. Researched and found correct usage. 
 
-4. I'm turning in the assignment as-is for now and hoping to find solution in the morning. 
+4.  Applied .split method (after making sure I understood it).
+
+5. 
 
 **Source for image MD code**: http://www.disturbancesinthewash.net/journal/2012/8/11/how-to-add-an-image-with-link-in-markdown.html
+
+**Source for .toString method**:
+https://www.w3schools.com/jsref/jsref_tostring_number.asp 
+
+**Source for .split method**:
+https://www.w3schools.com/jsref/jsref_split.asp
+
+**Source for .splice method**:
+https://www.w3schools.com/jsref/jsref_splice.asp
+
