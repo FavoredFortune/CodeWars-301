@@ -1,16 +1,8 @@
 'use strict';
 
-//This codewar challenge was to return a reverse string without using the reverse method.
+//This codewar challenge was to return a new array with each element double the original vale of the element in the first array.
 
-function solution(str){
-  //create an array to hold the newly reveresed string
-  let reverseArray = [];
-  //split the original string
-  str.split();
-  // for each item in the string take the last item and put it in the first and then next indicies in the new array defined above
-  for (i in str){
-    reverseArray.unshift(str[i]);
-  }
-  //return the string rejoined within the array in reverse order
-  return reverseArray.join('');
+function double(array) {
+  //used the map method like a for loop to multiple each element by 2 to double the elements and return the new array
+  return mappedArray = array.map(x => x*2);
 }
