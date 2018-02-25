@@ -10,7 +10,12 @@ function validatePIN (pin) {
   //each works for its own part, but the two don't work together 
   //currently passing 51 failing 7
 
+<<<<<<< HEAD
   let res =  /^([\d]{4}|[\d]{6}])/g.test(pin);
   return res ? true : false;
+=======
+  let res =  /^([\d]{4}|[\d]{6}])$/g.test(pin);
+  return  res ? true : false; 
+>>>>>>> 5aeffaba38e500458ade116ea15b2fe39d9e9ae1
 }
 
