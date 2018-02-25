@@ -4,18 +4,13 @@
 
 function validatePIN (pin) {
 
-  //the \d is meant to match only digits, so if a string has something other than digits it returns false
+  //the \d matches only digits, so if a string has something other than digits it returns false
   // {4} and {6} are meant to match strings that are only 4 or 6 characters in length
   // the | is meant to make it either 4 or 6 digits
-  //each works for its own part, but the two don't work together 
-  //currently passing 51 failing 7
+  //just needed to get rid of the brackets around the two clauses
+  // YAY!!!!
 
-<<<<<<< HEAD
-  let res =  /^([\d]{4}|[\d]{6}])/g.test(pin);
-  return res ? true : false;
-=======
-  let res =  /^([\d]{4}|[\d]{6}])$/g.test(pin);
-  return  res ? true : false; 
->>>>>>> 5aeffaba38e500458ade116ea15b2fe39d9e9ae1
+  let res =  /^(\d{4}|\d{6})$/.test(pin);
+  return res ? true : false ;
 }
 

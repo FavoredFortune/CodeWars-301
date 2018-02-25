@@ -23,7 +23,9 @@ I believe the best approach is to rules to do the following:
 
 3. Tested my solution in Kata and can only get it work for digit quantity match (4 or 6). 
 
-4. In interest of time (spent an hour and 15 minutes on it), calling it done for now at partial solution - pass 10, fail 9.
+4. Coming back to this fresh, I could tell I was close, so I kept trying different things with the brackets and braces, based on the hint I got from TA Shannon. 
+
+5. Finally got it!!
 
 **Source for image MD code**: http://www.disturbancesinthewash.net/journal/2012/8/11/how-to-add-an-image-with-link-in-markdown.html
 
