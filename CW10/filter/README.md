@@ -1,36 +1,40 @@
 # CodeWars-301
-*String Sentence - Kata 12 Day 8*
+*Filter Strings - Kata 14 Day 10*
 
 **Link to Kata:** 
-https://www.codewars.com/kata/disemvowel-trolls/train/javascript
+https://www.codewars.com/kata/list-filtering/train/javascript
 
-**Problem Domain:** This code is meant to remove all vowels from troll comments on a site (not including y).
+**Problem Domain:** This code is meant to remove any strings from an array that also includes integers.
 
 **Thought process for solution:**
 
-This time I pseudcoded with Austin Matteson
-![Pseudo Code Whiteboard](Austin_Sooz_Pseudo.jpg)
+This time I pseudcoded alone
+![Pseudo Code Whiteboard](Filter_Pseudo.jpg)
 
-We discussed the steps first, and Austin writes the pseudo code ever so slightly different than I do, but I found it really much better to code from...instead of numbering steps he wrote steps out with a conditional/code like prompt. 
+I thought about using .join but it turned the array  and then filter or just use filter alone.  
 
-Then we discussed how we might write the solution
-* We agreed array methods like filter, map, pop or shift might be useful.
 
 **Solution work:**
 1. Made solutions.js
 
 2. Made README
 
-3. Worked on this on my own, using REPL and a single test I made up. 
+3. I tried using .join method, but realized it would just create a string I'd have to turn back into array. Seemed realy inefficient. 
 
-4. I tried .map, but I don't understand it well enough. 
+4. I tried using .map but filtering out null wasn't working to remove the strings. 
 
-5. I researched .join and got a refresher on .pop, so then I applied those, but I was failing most of the test still 
+5. I then played with regex, but couldn't get it to work.
 
-6. Austin returned from his whiteboard, solved it in less than 3 minutes and then pair programmed with me, asking me leading questions and letting me come up with solutions on my own to solve the failed test conditions. 
+6. Then I did some more research on .filter in this particular case.
 
-7. Finally solved it and passed all tests. Austin was really patient and helpful. 
+7. I saw that 'string' was used often in all the solutions I looked at which made sense, but so was "typeof" which I didn't understand, so I researched that.
+
+8. Found the solution with typeof and 'string'!
 
 **Source for image MD code**: http://www.disturbancesinthewash.net/journal/2012/8/11/how-to-add-an-image-with-link-in-markdown.html
 
 **Source for array methods information, W3Schools** https://www.w3schools.com/jsref/jsref_filter.asp 
+
+**Source for typeof info (after seeing it in research)**
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
+
