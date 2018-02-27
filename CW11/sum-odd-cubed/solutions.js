@@ -3,7 +3,7 @@
 //This codewar challenge was to deliver a sum of an array of odd numbers that have been cubed from an array that doesn't contain strings.
 
 function cubeOdd(arr) {
-  //filter original array and make sure it doesn't have a string, give array new variable name
+  //filter original array using some and make sure it doesn't have a string, give array new variable name
   if (arr.some(x => typeof x !== 'number')){
     return undefined;
   }

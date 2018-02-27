@@ -43,3 +43,5 @@ Tonight I pseudo coded on with Jose R.
 
 **Source for for loop help**:
 https://www.w3schools.com/jsref/jsref_continue.asp
+
+* Special thanks to Kat, our TA
