@@ -29,6 +29,6 @@ This time I pseudcoded with Rebecca
 
 8. Still didn't work. Consulted with amazing TA Kat and found that my 'undefined' should have been undefined, my if statement with an else was breaking but if alone works and I was filtering even instead of odd numbers. 
 
-9. Fixed!!
+9. Fixed and it now works!
 
 **Source for image MD code**: http://www.disturbancesinthewash.net/journal/2012/8/11/how-to-add-an-image-with-link-in-markdown.html
