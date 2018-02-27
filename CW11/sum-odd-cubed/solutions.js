@@ -1,8 +1,17 @@
 'use strict';
 
-//This codewar challenge was to return a new array with each element double the original vale of the element in the first array.
+//This codewar challenge was to deliver a sum of an array of odd numbers that have been cubed from an array that doesn't contain strings.
 
-function double(array) {
-  //used the map method like a for loop to multiple each element by 2 to double the elements and return the new array
-  return mappedArray = array.map(x => x*2);
+function cubeOdd(arr) {
+  //filter original array and make sure it doesn't have a string, give array new variable name
+  if (arr.some(x => typeof x !== 'number')){
+    return undefined;
+  }
+  //transform every element in the second (goodArray) into a cube of itself
+  let sumArray = arr.filter(x => x%2 !== 0).map(x => x*x*x).reduce((accumulator, currentValue) =>
+  { return accumulator + currentValue;
+  },0 //sets initial value at zero
+  );
+  return sumArray;
 }
+
