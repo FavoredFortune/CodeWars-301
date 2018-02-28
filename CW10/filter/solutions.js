@@ -2,6 +2,8 @@
 
 //This codewar challenge was to return a string from an array with commas between each value but the last one, which would have an "and". It would also remove empty strings from the array and only append the commas and "and" if there were three or more values (two values would have just "and" between them.)
 
+// Updating for grading
+
 function formatWords(words){
 
   // this returns an empty string for empty arrays
