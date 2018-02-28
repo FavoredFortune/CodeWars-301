@@ -1,17 +1,18 @@
 'use strict';
 
-//This codewar challenge was to deliver a sum of an array of odd numbers that have been cubed from an array that doesn't contain strings.
+//To take a string of words and find the highest value word, with each word's value being a sum of each letter's value with a=1 and incrementing on through z=26. There will be no empty strings. And if two words are of equal, highest value, the word that is earliest in the string is to be returned.
 
-function cubeOdd(arr) {
-  //filter original array using some and make sure it doesn't have a string, give array new variable name
-  if (arr.some(x => typeof x !== 'number')){
-    return undefined;
-  }
-  //transform every element in the second (goodArray) into a cube of itself
-  let sumArray = arr.filter(x => x%2 !== 0).map(x => x*x*x).reduce((accumulator, currentValue) =>
-  { return accumulator + currentValue;
-  },0 //sets initial value at zero
-  );
-  return sumArray;
+function high(x){
+
+  //break out all the words in a string into an array of each word as a string
+  let wordArray = x.split(' ');
+
+  //trying to work to add the letters of a string together by their charAt value, but I"m wrong
+  let sumArray = wordArray.reduce(function(){
+    for (let i in wordArray){
+      wordArray[i].reduce( i =>i.chartAt(i));
+    }
+  });
+  console.log(sumArray);
+
 }
-
