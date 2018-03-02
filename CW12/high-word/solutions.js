@@ -8,7 +8,7 @@ function high(x){
   let wordArray = x.split(' ');
 
   //highscore variable
-  let highScore = 0;
+  let highValue = 0;
 
   //store current value during loop
   let currentValue = 0;
